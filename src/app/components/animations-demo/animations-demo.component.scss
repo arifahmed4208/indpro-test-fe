@@ -1,0 +1,12 @@
+@import "../../Theme/variables.scss";
+
+.content{
+  text-align: center;
+}
+.animated-button {
+    transition: all 0.3s ease;
+  }
+  .animated-button:hover {
+    transform: scale(1.1);
+    background-color: $secondary;
+  }

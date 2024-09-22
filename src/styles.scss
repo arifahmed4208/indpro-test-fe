@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/Theme/variables.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.main-content {
+    background-color: $light;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 85%;
+    overflow-y: auto;
+  }  

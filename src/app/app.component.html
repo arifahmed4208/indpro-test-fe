@@ -1,0 +1,18 @@
+<div class="app-container">
+  <header class="app-header">
+    <button class="sidebar-toggle" (click)="toggleSidebar()">
+      <span *ngIf="!isSidebarOpen">&#9776;</span> <!-- Hamburger icon -->
+      <span *ngIf="isSidebarOpen">&#10006;</span> <!-- Close icon (X) -->
+    </button>
+    <h1>IndPro Front-End App</h1>
+  </header>
+  <div class="content-container">
+    <app-sidebar [isOpen]="isSidebarOpen" (itemClicked)="onSidebarItemClicked()"></app-sidebar>
+    <main [class.sidebar-open]="isSidebarOpen">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <footer class="app-footer">
+    <p>© 2024 IndPro Test</p>
+  </footer>
+</div>
